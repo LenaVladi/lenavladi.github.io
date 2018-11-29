@@ -310,56 +310,56 @@ template {
 @font-face {
   font-weight: normal;
   font-family: 'Cormorant Garamond', serif;
-  src: url("/src/fonts/Cormorant_Garamond/CormorantGaramond-Regular.woff") format("woff");
+  src: url("/suorce/srcrce/src/fonts/Cormorant_Garamond/CormorantGaramond-Regular.woff") format("woff");
   font-style: normal;
   font-display: swap; }
 
 @font-face {
   font-weight: normal;
   font-family: 'Cormorant Garamond', serif;
-  src: url("/src/fonts/Cormorant_Garamond/CormorantGaramond-Italic.woff") format("woff");
+  src: url("/suorce/srcrce/src/fonts/Cormorant_Garamond/CormorantGaramond-Italic.woff") format("woff");
   font-style: italic;
   font-display: swap; }
 
 @font-face {
   font-weight: bold;
   font-family: 'Cormorant Garamond', serif;
-  src: url("/src/fonts/Cormorant_Garamond/CormorantGaramond-Bold.woff") format("woff");
+  src: url("/suorce/srcrce/src/fonts/Cormorant_Garamond/CormorantGaramond-Bold.woff") format("woff");
   font-style: normal;
   font-display: swap; }
 
 @font-face {
   font-weight: bold;
   font-family: 'Cormorant Garamond', serif;
-  src: url("/src/fonts/Cormorant_Garamond/CormorantGaramond-BoldItalic.woff") format("woff");
+  src: url("/suorce/srcrce/src/fonts/Cormorant_Garamond/CormorantGaramond-BoldItalic.woff") format("woff");
   font-style: italic;
   font-display: swap; }
 
 @font-face {
   font-weight: normal;
   font-family: 'Montserrat', sans-serif;
-  src: url("/src/fonts/Montserrat/Montserrat-LightItalic.woff") format("woff");
+  src: url("/suorce/srcrce/src/fonts/Montserrat/Montserrat-LightItalic.woff") format("woff");
   font-style: italic;
   font-display: swap; }
 
 @font-face {
   font-weight: normal;
   font-family: 'Montserrat', sans-serif;
-  src: url("/src/fonts/Montserrat/Montserrat-Light.woff") format("woff");
+  src: url("/suorce/srcrce/src/fonts/Montserrat/Montserrat-Light.woff") format("woff");
   font-style: normal;
   font-display: swap; }
 
 @font-face {
   font-weight: bold;
   font-family: 'Montserrat', sans-serif;
-  src: url("/src/fonts/Montserrat/Montserrat-BoldItalic.woff") format("woff");
+  src: url("/suorce/srcrce/src/fonts/Montserrat/Montserrat-BoldItalic.woff") format("woff");
   font-style: italic;
   font-display: swap; }
 
 @font-face {
   font-weight: bold;
   font-family: 'Montserrat', sans-serif;
-  src: url("/src/fonts/Montserrat/Montserrat-Bold.woff") format("woff");
+  src: url("/suorce/srcrce/src/fonts/Montserrat/Montserrat-Bold.woff") format("woff");
   font-style: normal;
   font-display: swap; }
 
