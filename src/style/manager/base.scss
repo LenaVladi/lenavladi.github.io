@@ -4,15 +4,24 @@
 
 body {
   min-width: 320px;
-  font-size: 18px;
+  font-size: 22px;
   line-height: 1.5;
   color: var(--black);
   font-family: 'Cormorant Garamond', serif;
   margin: 0;
   padding: 0;
 
+  @include respond-to($desktop-s) {
+    font-size: 20px;
+  }
+
+  @include respond-to($tablet) {
+    font-size: 18px;
+  }
+
   @include respond-to($mobile) {
     text-align: center;
+    font-size: 18px;
   }
 }
 
@@ -42,7 +51,7 @@ ul {
 }
 
 .link {
-  color: var(--link);
+  color: var(--blue);
 
   &:hover {
     color: var(--green);

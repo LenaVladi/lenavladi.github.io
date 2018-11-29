@@ -2,10 +2,11 @@
   max-width: 1920px;
   padding: 50px;
   position: relative;
+  display: flex;
+  align-items: center;
 
   @include respond-to($mobile) {
     padding: 20px;
-    display: flex;
     flex-direction: column;
     justify-content: center;
   }

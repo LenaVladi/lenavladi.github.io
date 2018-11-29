@@ -2,13 +2,14 @@
   font-family: 'Montserrat', sans-serif;
   position: absolute;
   display: block;
-  width: 138px;
+  width: 160px;
   height: 50px;
   right: 200px;
   top: 0;
 
   @include respond-to($mobile) {
     right: 150px;
+    width: 138px;
     text-align: left;
   }
 }
