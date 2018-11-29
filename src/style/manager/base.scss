@@ -1,0 +1,54 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  min-width: 320px;
+  font-size: 18px;
+  line-height: 1.5;
+  color: var(--black);
+  font-family: 'Cormorant Garamond', serif;
+  margin: 0;
+  padding: 0;
+
+  @include respond-to($mobile) {
+    text-align: center;
+  }
+}
+
+img {
+  width: 100%;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: $transition;
+}
+
+p {
+  color: inherit;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Montserrat', sans-serif;
+  margin-top: 0;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.link {
+  color: var(--link);
+
+  &:hover {
+    color: var(--green);
+  }
+}
+
+.letter {
+  color: var(--letter);
+}

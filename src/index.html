@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>LenaVladi</title>
+  <!-- fonts -->
+  <link rel="preload" href="fonts/Cormorant_Garamond/CormorantGaramond-Regular.woff" as="font">
+  <link rel="preload" href="fonts/Montserrat/Montserrat-Light.woff" as="font">
+  <!-- web fonts -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  <!-- style -->
+  <link rel="stylesheet" href="style/style.min.css">
+  <!-- polifil -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/picturefill/3.0.1/picturefill.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/svg4everybody/2.1.9/svg4everybody.min.js"></script>
+  <script>svg4everybody();</script>
+</head>
+<body>
+<header class="header">
+  <div class="header__top">
+    <div class="arrow">
+      <span class="arrow__block">
+        <span class="arrow__point"></span>
+        <span class="arrow__arrow"></span>
+      </span>
+      <span>Мои работы</span>
+    </div>
+    <button class="header__burger" type="button">
+      <span class="header__burger-piece"></span>
+      <span class="header__burger-piece"></span>
+      <span class="header__burger-piece"></span>
+    </button>
+    <div class="links">
+      <h4>Мои работы</h4>
+      <ul class="links__list">
+        <li class="links__item"><a href="https://www.kia.ru/special/belkacar/" class="links__link">Kia::Belka Car</a></li>
+        <li class="links__item"><a href="http://www.defa.ru/" class="links__link">DEFA::.defa</a></li>
+        <li class="links__item"><a href="https://github.com/LenaVladi/time_table" class="links__link">Time table (тестовое)</a></li>
+        <li class="links__item"><a href="https://www.kia.ru/models/sportage/desc/" class="links__link">Kia::Sportage</a></li>
+        <li class="links__item"><a href="https://www.kia.ru/personal/cabinet/garage/" class="links__link">Kia::Личный кабинет</a></li>
+        <li class="links__item"><a href="https://lenavladi.github.io/adaptive-landing/" class="links__link">Лендинг::Школа трафика</a></li>
+        <li class="links__item"><a href="https://lenavladi.github.io/sedona/" class="links__link">Sedona</a></li>
+        <li class="links__item"><a href="https://lenavladi.github.io/yes-landing/" class="links__link">Лендинг::Курсы английского языка</a></li>
+        <li class="links__item"><a href="https://lenavladi.github.io/ozon_page/" class="links__link">Лендинг::Корпоративные сертификаты OZON.ru (тестовое)</a></li>
+        <li class="links__item"><a href="javascript:void(0)" class="links__link"></a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="header__inner">
+    <p class="header__description">
+      Привет! Меня зовут <strong class="name">Ал<span class="letter">ё</span>на</strong>. <br>
+      Я Frontend developer / HTML-верстальщик
+    </p>
+    <ul class="social">
+      <li class="social__item tg">
+        <a href="https://t.me/alyona_s"
+           target="_blank"
+           class="social__list"><i class="fab fa-telegram-plane"></i></a></li>
+      <li class="social__item gh">
+        <a href="https://github.com/LenaVladi"
+           target="_blank"
+           class="social__list"><i class="fab fa-github"></i></a></li>
+      <li class="social__item ml">
+        <a href="mailto:lenavladi.web@ya.ru"
+           class="social__list"><i class="fas fa-at"></i></a></li>
+      <li class="social__item fb">
+        <a href="https://www.facebook.com/profile.php?id=100000219604890"
+           target="_blank"
+           class="social__list"><i class="fab fa-facebook-f"></i></a></li>
+    </ul>
+  </div>
+</header>
+<main class="main">
+  <div class="main__inner">
+    <div class="main__item">
+      <div class="main__item-content profile">
+        <!-- my photo -->
+        <picture>
+          <source media="(min-width: 1024px)"
+                  srcset="image/profile@2x.jpg 2x">
+          <source media="(min-width: 768px)"
+                  srcset="image/profile@1x.jpg 1x">
+          <img width="280"
+               src="image/profile@0.5x.jpg"
+               class="profile__img"
+               alt="Алёна Сиприкова">
+        </picture>
+      </div>
+    </div>
+    <div class="main__item">
+      <div class="main__item-content">
+        <p>
+          С 2017 года в web-индустрии. <br>
+          Мо<span class="letter">ё</span> хобби - играть на пианино и петь.
+        </p>
+      </div>
+    </div>
+    <div class="main__item purple">
+      <div class="main__item-content">
+        <h4>Навыки</h4>
+        <p>
+          HTML / CSS, JavaScript, <br>
+          Анимация на css и js, <br>
+          Vue.js, Grid, Flex и многое другое.
+        </p>
+      </div>
+    </div>
+    <div class="main__item">
+      <div class="main__item-content">
+        <p>
+          Работала в web-интеграторе <a class="link" href="http://www.defa.ru/">.defa</a> - <br>
+          Junior Frontend
+        </p>
+      </div>
+    </div>
+    <div class="main__item pink">
+      <div class="main__item-content">
+        Всегда пишите код так, будто сопровождать его будет склонный к насилию психопат, который знает, где вы живете.
+        — <em>Martin Golding</em>
+      </div>
+    </div>
+    <div class="main__item">
+      <div class="main__item-content">
+        <p>
+          Училась в HTML-academy, Нетологии, Coursera
+        </p>
+      </div>
+    </div>
+  </div>
+</main>
+<footer class="footer">
+  <span class="coopyright">&copy; 2018</span>
+  <ul class="social social--footer">
+    <li class="social__item tg">
+      <a href="https://t.me/alyona_s"
+         target="_blank"
+         class="social__list"><i class="fab fa-telegram-plane"></i></a></li>
+    <li class="social__item gh">
+      <a href="https://github.com/LenaVladi"
+         target="_blank"
+         class="social__list"><i class="fab fa-github"></i></a></li>
+    <li class="social__item ml">
+      <a href="mailto:lenavladi.web@ya.ru"
+         class="social__list"><i class="fas fa-at"></i></a></li>
+    <li class="social__item fb">
+      <a href="https://www.facebook.com/profile.php?id=100000219604890"
+         target="_blank"
+         class="social__list"><i class="fab fa-facebook-f"></i></a></li>
+  </ul>
+</footer>
+<script src="js/burger.min.js"></script>
+</body>
+</html>

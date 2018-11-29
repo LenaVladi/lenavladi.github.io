@@ -1,0 +1,13 @@
+@import "../../node_modules/normalize.css/normalize";
+
+@import "manager/fonts";
+@import "manager/var";
+@import "manager/mixins";
+@import "manager/base";
+
+@import "include/header";
+@import "include/arrow";
+@import "include/links";
+@import "include/social";
+@import "include/main";
+@import "include/footer";

@@ -1,0 +1,12 @@
+.footer {
+  max-width: 1920px;
+  padding: 50px;
+  position: relative;
+
+  @include respond-to($mobile) {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
