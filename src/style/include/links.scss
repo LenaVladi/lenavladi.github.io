@@ -8,8 +8,10 @@
   border-radius: 6px;
   padding: 30px;
   opacity: 0;
-  height: 0;
-  transition: $transition;
+  transition: 0.4s ease-in-out;
+  //transform: translate(0, -100%);
+  visibility: hidden;
+
 
   &::before {
     content: "";
@@ -21,13 +23,18 @@
     width: 100%;
     height: 100%;
     background-color: rgba(255, 255, 255, 0.9);
-    filter: blur(1px);
     z-index: -1;
   }
 
   &.opened {
+    z-index: 2;
+    visibility: visible;
     opacity: 1;
-    height: auto;
+    //transform: translate(0, 0);
+  }
+
+  @include respond-to($landscape) {
+    max-width: calc(100% - 200px);
   }
 
   @include respond-to($mobile) {
@@ -41,25 +48,56 @@
   font-family: 'Cormorant Garamond', serif;
   margin-bottom: 15px;
   cursor: pointer;
-  font-size: 0;
 
-  &:nth-child(n+1):hover {
-    color: var(--purple);
+  span {
+    color: var(--textgray);
+    transition: $transition;
+
+    @include respond-to($ie) {
+      color: $textgray;
+    }
   }
 
-  &:nth-child(2n+1):hover {
-    color: var(--pink);
-  }
+  @include respond-to($hover) {
 
-  &:nth-child(3n+1):hover {
-    color: var(--blue);
-  }
+    &:nth-child(n+1):hover {
+      color: var(--purple);
 
-  &:nth-child(4n+1):hover {
-    color: var(--green);
-  }
-}
+      @include respond-to($ie) {
+        color: $purple;
+      }
+    }
 
-.links.opened .links__item {
-  font-size: inherit;
+    &:nth-child(2n+1):hover {
+      color: var(--pink);
+
+      @include respond-to($ie) {
+        color: $pink;
+      }
+    }
+
+    &:nth-child(3n+1):hover {
+      color: var(--blue);
+
+      @include respond-to($ie) {
+        color: $blue;
+      }
+    }
+
+    &:nth-child(4n+1):hover {
+      color: var(--green);
+
+      @include respond-to($ie) {
+        color: green;
+      }
+    }
+
+    &:hover span {
+      color: var(--black);
+
+      @include respond-to($ie) {
+        color: black;
+      }
+    }
+  }
 }

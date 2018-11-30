@@ -29,10 +29,10 @@ gulp.task('test_style', function() {
 gulp.task('run_dev', ['style'], function() {
   server.init({
     server: 'src/',
+    // tunnel: true,
     notify: false,
-    open: true,
-    cors: true,
-    ui: false
+    ui: false,
+    open: true
   });
 
   gulp.watch('src/style/**/*.{scss,sass}', ['test_style']).on('change', server.reload);

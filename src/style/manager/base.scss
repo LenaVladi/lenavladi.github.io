@@ -11,6 +11,10 @@ body {
   margin: 0;
   padding: 0;
 
+  @include respond-to($ie) {
+    color: $black;
+  }
+
   @include respond-to($desktop-s) {
     font-size: 20px;
   }
@@ -19,9 +23,30 @@ body {
     font-size: 18px;
   }
 
+  @include respond-to($landscape) {
+    font-size: 18px;
+  }
+
   @include respond-to($mobile) {
     text-align: center;
     font-size: 18px;
+  }
+
+  &.overlay {
+
+    &:before {
+      content: "";
+      display: block;
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 1;
+      background-color: rgba(255, 255, 255, 0.7);
+    }
   }
 }
 
@@ -53,11 +78,23 @@ ul {
 .link {
   color: var(--blue);
 
+  @include respond-to($ie) {
+    color: $blue;
+  }
+
   &:hover {
     color: var(--green);
+
+    @include respond-to($ie) {
+      color: $green;
+    }
   }
 }
 
 .letter {
   color: var(--letter);
+
+  @include respond-to($ie) {
+    color: $letter;
+  }
 }

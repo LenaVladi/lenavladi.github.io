@@ -11,6 +11,7 @@ header_toggle.addEventListener('click', function () {
     var burger = this;
     burger.classList.toggle('active');
     menu.classList.toggle('opened');
+    document.body.classList.toggle('overlay');
     
     if(!burger.classList.contains('active')) {
       burger.classList.contains('closing');
@@ -21,5 +22,13 @@ header_toggle.addEventListener('click', function () {
       clearTimeout(click_delayTimer);
       click_delayTimer = null;
     }, click_delay);
+  }
+});
+
+document.body.addEventListener('click', function () {
+  if(header_toggle.classList.contains('active') && event.target !== menu) {
+    var click = new CustomEvent('click');
+    
+    header_toggle.dispatchEvent(click);
   }
 });

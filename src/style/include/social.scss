@@ -41,18 +41,34 @@
 
   &.tg:hover {
     background-color: var(--blue);
+
+    @include respond-to($ie) {
+      background-color: $blue;
+    }
   }
 
   &.gh:hover {
     background-color: var(--black);
+
+    @include respond-to($ie) {
+      background-color: $black;
+    }
   }
 
   &.ml:hover {
     background-color: var(--yellow);
+
+    @include respond-to($ie) {
+      background-color: $yellow;
+    }
   }
 
   &.fb:hover {
     background-color: var(--blue);
+
+    @include respond-to($ie) {
+      background-color: $blue;
+    }
   }
 
   @include respond-to($mobile) {

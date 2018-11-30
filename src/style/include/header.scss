@@ -3,6 +3,10 @@
   padding: 0 50px;
   position: relative;
 
+  @include respond-to($landscape) {
+    padding: 0 20px;
+  }
+
   @include respond-to($mobile) {
     padding: 0 20px;
   }
@@ -15,6 +19,10 @@
   align-items: center;
   justify-content: center;
 
+  @include respond-to($landscape) {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
 
   @include respond-to($mobile) {
     flex-direction: column;
@@ -30,6 +38,10 @@
   margin-right: 50px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+
+  @include respond-to($landscape) {
+    font-size: 22px;
+  }
 
   @include respond-to($mobile) {
     width: 100%;
@@ -47,6 +59,7 @@
   height: 45px;
   margin: 20px;
   margin-left: auto;
+  margin-right: 0;
   font-size: 22px;
   display: flex;
   justify-content: center;
@@ -59,17 +72,25 @@
   cursor: pointer;
   transition: $transition;
 
-  &:hover, &:focus {
-    box-shadow: -3px 3px 20px 3px rgba(103, 58, 183, 0.4);
+  @include respond-to($hover) {
+    &:hover, &:focus {
+      box-shadow: -3px 3px 20px 3px rgba(103, 58, 183, 0.4);
+    }
   }
 
-  @include respond-to($mobile) {
-    margin-right: 0;
+  &.active {
+    z-index: 2;
+    box-shadow: -3px 3px 20px 3px rgba(103, 58, 183, 0.4);
+
+    .header__burger-icon {
+      visibility: hidden;
+      transform: translateY(-100%);
+    }
   }
 }
 
 .header__burger-piece {
-  display: block;
+  display: none;
   position: absolute;
   width: 17px;
   border-top: 1px solid #fff;
@@ -91,6 +112,7 @@
   }
 
   .active & {
+    display: block;
 
     &:nth-child(1) {
       top: 10px;

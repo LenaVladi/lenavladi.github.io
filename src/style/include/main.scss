@@ -19,6 +19,15 @@
     }
   }
 
+  @include respond-to($landscape) {
+    width: 50%;
+    flex-basis: 50%;
+
+    &:nth-child(3), &:nth-child(5), &:nth-child(6) {
+      order: 1;
+    }
+  }
+
   @include respond-to($mobile) {
     width: 100%;
     flex-basis: 100%;
@@ -52,6 +61,11 @@
   &.profile {
     padding: 0;
     filter: saturate(0%);
+  }
+
+  @include respond-to($landscape) {
+    padding: 20px;
+    text-align: left;
   }
 
   @include respond-to($mobile) {
