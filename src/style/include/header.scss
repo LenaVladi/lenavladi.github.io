@@ -39,6 +39,10 @@
   line-height: 1.5;
   letter-spacing: 0.02em;
 
+  @include respond-to($ie) {
+    max-width: 100%;
+  }
+
   @include respond-to($landscape) {
     font-size: 22px;
   }
@@ -71,6 +75,12 @@
   outline: none;
   cursor: pointer;
   transition: $transition;
+
+  padding: 12px 5px 0 0;
+
+  @include respond-to($ie) {
+    background-color: $black;
+  }
 
   @include respond-to($hover) {
     &:hover, &:focus {

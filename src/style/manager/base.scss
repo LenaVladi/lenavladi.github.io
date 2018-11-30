@@ -52,6 +52,10 @@ body {
 
 img {
   width: 100%;
+
+  @include respond-to($ie) {
+    max-width: 100%;
+  }
 }
 
 a {
@@ -96,5 +100,11 @@ ul {
 
   @include respond-to($ie) {
     color: $letter;
+  }
+}
+
+.profile {
+  @include respond-to($ie) {
+    background-color: $blue;
   }
 }
