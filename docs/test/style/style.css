@@ -8,6 +8,7 @@
 .uikit-inner {
   width: 769px;
   margin: 0 auto;
+  padding: 1px 0;
   background-color: #ffffff; }
 
 .uikit-table {
