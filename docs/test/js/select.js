@@ -12,7 +12,7 @@
   }
 
   function checkNewOption(event) {
-    selectList.forEach(function (el) {
+    [].forEach.call(selectList, function (el) {
       return el.classList.remove('active');
     });
     event.target.classList.add('active');
@@ -25,23 +25,16 @@
     selectInput = select.querySelector('.ui-input');
     selectList = select.querySelectorAll('.ui-option');
     toggleSelect(select);
-    selectList.forEach(function (el) {
+    [].forEach.call(selectList, function (el) {
       return el.addEventListener('click', checkNewOption);
     });
-  }
+  } // [].forEach.call = for IE :(
 
-  function onKeydown(keyCode) {
-    switch (keyCode) {
-      case 40:
-        console.dir(selectInput);
-        console.log(selectInput.nextSibling);
-    }
-  }
 
-  selectArrow.forEach(function (el) {
+  [].forEach.call(selectArrow, function (el) {
     return el.addEventListener('click', showSelectList);
   });
-  selectInputList.forEach(function (el) {
+  [].forEach.call(selectInputList, function (el) {
     return el.addEventListener('focus', showSelectList);
   });
 })();
