@@ -5,6 +5,11 @@
   -webkit-box-shadow: 0 0 7px 0 #284159;
           box-shadow: 0 0 7px 0 #284159; }
 
+.uikit-inner {
+  width: 769px;
+  margin: 0 auto;
+  background-color: #ffffff; }
+
 .uikit-table {
   padding: 0 45px; }
 

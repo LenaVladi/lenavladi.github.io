@@ -7,13 +7,14 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600&display=swap&subset=cyrillic"
         rel="stylesheet">
-    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="style/style.css">
     <title>UI-kit</title>
 </head>
 
 <body>
     <main class="uikit-content">
-        <section>
+        <!-- uikit-inner for IE :( -->
+        <section class="uikit-inner">
             <h2 class="uikit-heading ui-text">Typography</h2>
             <ul class="uikit-list">
                 <li class="uikit-typography-item">
@@ -56,7 +57,7 @@
             </ul>
         </section>
 
-        <section class="uikit-colors">
+        <section class="uikit-colors uikit-inner">
             <h2 class="uikit-heading ui-text">Colors</h2>
             <ul class="uikit-list ui-text">
                 <li class="uikit-colors-item">
@@ -116,7 +117,7 @@
             </ul>
         </section>
 
-        <section>
+        <section class="uikit-inner">
             <h2 class="uikit-heading ui-text">Buttons</h2>
             <table class="uikit-table">
                 <thead class="visually-hidden">
@@ -155,7 +156,7 @@
             </table>
         </section>
 
-        <section>
+        <section class="uikit-inner">
             <h2 class="uikit-heading ui-text">Input</h2>
             <table class="uikit-table">
                 <thead class="visually-hidden">
@@ -216,7 +217,7 @@
             </table>
         </section>
 
-        <section class="uikit-select">
+        <section class="uikit-select uikit-inner">
             <h2 class="uikit-heading ui-text">Select</h2>
             <table class="uikit-table">
                 <thead class="visually-hidden">
@@ -314,7 +315,7 @@
             </table>
         </section>
 
-        <section>
+        <section class="uikit-inner">
             <h2 class="uikit-heading ui-text">Checkbox</h2>
             <table class="uikit-table">
                 <thead class="visually-hidden">
